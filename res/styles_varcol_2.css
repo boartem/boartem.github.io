@@ -1,0 +1,29 @@
+:root {
+    --body_bgcolor: #3498DB;
+    --body_bgimg: url("../graphics/bg2.jpg");
+    --body_textcolor: black;
+    --header_bgcolor: #262626;
+    --header_textcolor: #d3d3d3;
+    --header_size: 60px;
+    --link: #3498DB;
+    --alink: #2980B9;
+    --flink: #2980B9;
+    --hlink: #2980B9;
+    --vlink: #3498DB;
+    --dlink_bg: #3498DB;
+    --dlink_abg: #2980B9;
+    --dlink_fbg: #2980B9;
+    --dlink_hbg: #2980B9;
+    --dlink_vbg: #3498DB;
+    --dlink: #d3d3d3;
+    --dlink_a: #d3d3d3;
+    --dlink_f: #d3d3d3;
+    --dlink_h: #d3d3d3;
+    --dlink_v: #d3d3d3;
+    --bgcolor1: #f1f1f1;
+    --bgcolor2: #ddd;
+    --contentcolor: #3498DB;
+    --footer_bgcolor: #181818;
+    --footer_textcolor: #b7b7b7;
+    --bgfiltercolor: rgba(126, 126, 126, 0.25);
+}

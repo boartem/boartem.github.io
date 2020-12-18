@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body_bgcolor);
+    color: var(--body_textcolor);
+    font: 18pt sans-serif;
+    margin-top: var(--header_size);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--header_textcolor);
+    width: 100%;
+    height: var(--header_size);
+    box-shadow: 0px 8px 8px 4px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    margin-top: -30px;
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+
+ul li:before {
+    content: "►";
+    position: absolute;
+    left: 0;
+    font: bold;
+}
+
+h1 {
+    color: var(--link);
+    text-align: center;
+    cursor: default;
+    -webkit-text-stroke-width: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.p {
+    text-align: justify;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 15%;
+    padding-right: 15%;
+    min-height: 500px;
+}
+
+.p > h2, .p > h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.p h2 {
+    color: black;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
+
+.p:hover h2 {
+    color: var(--contentcolor);
+}
+
+.p h2::before,
+.p h2::after {
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+    transition: border-color 0.5s ease;
+    -webkit-transition: border-color 0.5s ease;
+    z-index: 9;
+}
+
+.p:hover h2::before,
+.p:hover h2::after {
+    border-color: var(--content-color);
+}
+
+.p0 {
+    background-color: var(--bgfiltercolor);
+}
+
+.p0 h2 {
+    margin-top: 10px;
+}
+
+.p1 {
+    background-color: var(--bgcolor1);
+}
+
+.p2 {
+    background-color: var(--bgcolor2);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--header_bgcolor);
+}
+
+.headeritem {
+    border: none;
+    height: 40px;
+    width: 40px;
+    pointer-events: none;   
+}
+
+.header_text > h1 {
+    font: bold 24pt sans-serif;
+    color: var(--header_textcolor);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    cursor: default;
+    margin: 0 auto;
+}
+
+.bgimg {
+    background-image: var(--body_bgimg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-image ease 1s;
+    -webkit-transition: background-image ease 1s;
+}
+
+.flex {
+    display: flex;  
+    margin-top: 0;
+    padding-bottom: 55px;
+}
+
+.center {
+    margin: 0 auto;
+    justify-content: center;
+    text-shadow: 0px 0px 16px rgba(0,0,0,0.2);
+}
+
+.bigtext {
+    font: 26pt sans-serif;
+    text-align: left;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.smalltext {
+    font: 12pt sans-serif;
+    text-align: left;
+}
+
+a:link {
+    color: var(--link);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color ease 0.5s;
+    -webkit-transition: color ease 0.5s;
+}
+
+a:hover {
+    color: var(--hlink);
+}
+
+a:active {
+    color: var(--alink);
+}
+
+a:focus {
+    color: var(--flink);
+}
+
+a:visited {
+    color: var(--vlink);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+a:visited:hover {
+    color: var(--hlink);
+}
+
+a:visited:active {
+    color: var(--alink);
+}
+
+a:visited:focus {
+    color: var(--flink);
+}
+
+:target::before { /*header links overlap fix*/
+    content: "";
+    display: block;
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+}
+
+.dlink {
+    z-index: 100;
+}
+
+.dlink:link {
+    color: var(--dlink);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--dlink_bg);
+    padding: 0.66em 1em;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    transition: background-color ease 0.5s;
+    -webkit-transition: background-color ease 0.5s;
+}
+
+.dlink:hover {
+    color: var(--dlink_h);
+    background-color: var(--dlink_hbg);
+}
+
+.dlink:active {
+    color: var(--dlink_a);
+    background-color: var(--dlink_abg);
+}
+
+.dlink:focus {
+    color: var(--dlink_f);
+    background-color: var(--dlink_fbg);
+}
+
+.dlink:visited {
+    color: var(--dlink_v);
+    background-color: var(--dlink_vbg);
+}
+
+.dlink:visited:hover {
+    color: var(--dlink_h);
+    background-color: var(--dlink_hbg);
+}
+
+.dlink:visited:active {
+    color: var(--dlink_a);
+    background-color: var(--dlink_abg);
+}
+
+.dlink:visited:focus {
+    color: var(--dlink_f);
+    background-color: var(--dlink_fbg);
+}
+
+.rspan {
+    display: none;
+    bottom: 120px;
+    left: 87%;
+    position:fixed;
+    margin-right: 1em;
+    z-index: 99;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: var(--footer_bgcolor);
+    color: var(--footer_textcolor);
+    align-items: center;
+    height: 200px;
+    z-index: 100;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.footer_content > a:link {
+    color: var(--footer_textcolor) !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: none;
+    -webkit-transition: none;
+}
+
+.footer_content > a:hover {
+    color: white !important;
+}
+
+.footer_content > a:active {
+    color: white !important;
+}
+
+.footer_content > a:visited {
+    color: var(--footer_textcolor) !important;
+}
+
+.footer_content > a:visited:hover {
+    color: white !important;
+}
+
+.footer_content > a:visited:active {
+    color: white !important;
+}
+
+.footer_content {
+    line-height: 225%
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px 2px 5px;
+    background-color: rgba(0,0,0,0);
+    transition: background-color ease 0.5s;
+    -webkit-transition: background-color ease 0.5s;
+    margin: 0 auto;
+}
+
+.dropbtn .headeritem {
+    transition: transform ease 1s;
+}
+
+.rotateIt {
+    transform: rotateZ(-90deg);
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: var(--dlink_bg);
+}
+
+.dropbtn:active {
+    background-color: var(--dlink_abg);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    margin-top: 6px;
+    top:-60px;
+    z-index:-1;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: top ease-in-out 0.5s;
+    -webkit-transition: top ease-in-out 0.5s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    width: 160px;
+    border: none;
+    display: block;
+    transition: background-color ease 0.5s;
+    -webkit-transition: background-color ease 0.5s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    top: 48px;
+}
+
+@keyframes lightup {
+    from { 
+        color: black;
+        text-shadow: none;
+    }
+    to { 
+        color: var(--contentcolor);
+        text-shadow: 0px 0px 5px var(--contentcolor);
+    }
+}
+
+.p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid var(--contentcolor);
+    border-radius: 3px;
+    transition: width ease-in-out 1s;
+    -webkit-transition: width ease-in-out 1s;
+    max-height: 1000px;
+    margin-top: 45px;
+}
+
+.p img:hover {
+    width: 100%;
+}

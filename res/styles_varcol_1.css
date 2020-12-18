@@ -1,0 +1,29 @@
+:root {
+    --body_bgcolor: crimson;
+    --body_bgimg: url("../graphics/bg.jpg");
+    --body_textcolor: black;
+    --header_bgcolor: #262626;
+    --header_textcolor: #d3d3d3;
+    --header_size: 60px;
+    --link: #d3d3d3;
+    --alink: crimson;
+    --flink: crimson;
+    --hlink: crimson;
+    --vlink: #d3d3d3;
+    --dlink_bg: crimson;
+    --dlink_abg: #fd1340;
+    --dlink_fbg: #fd1340;
+    --dlink_hbg: #fd1340;
+    --dlink_vbg: crimson;
+    --dlink: #d3d3d3;
+    --dlink_a: #d3d3d3;
+    --dlink_f: #d3d3d3;
+    --dlink_h: #d3d3d3;
+    --dlink_v: #d3d3d3;
+    --bgcolor1: #f1f1f1;
+    --bgcolor2: #ddd;
+    --contentcolor: crimson;
+    --footer_bgcolor: #181818;
+    --footer_textcolor: #b7b7b7;
+    --bgfiltercolor: rgba(126, 126, 126, 0);
+}
