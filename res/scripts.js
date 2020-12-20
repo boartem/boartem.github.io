@@ -2,6 +2,7 @@ let root = document.documentElement;
 
 function setcolor_1() {
     var bgdiv = document.getElementById('bgimg');
+	var bgdiv2 = document.getElementById('bgimg2');
     root.style.setProperty(' --body_bgcolor', 'crimson');
     root.style.setProperty('--link', '#d3d3d3');
     root.style.setProperty('--alink', 'crimson');
@@ -44,9 +45,6 @@ function dropDown() {
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropimg = document.getElementById("MenuButton");
-        if (dropimg.classList.contains("rotateIt")) {
-            dropimg.classList.toggle("rotateIt");
-        }
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {

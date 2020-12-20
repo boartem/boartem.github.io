@@ -1,20 +1,20 @@
 :root {
-    --body_bgcolor: crimson;
+    --body_bgcolor: #e60000;
     --body_bgimg: url("../graphics/bg.jpg");
     --body_textcolor: black;
     --header_bgcolor: #262626;
     --header_textcolor: #d3d3d3;
     --header_size: 60px;
     --link: #d3d3d3;
-    --alink: crimson;
-    --flink: crimson;
-    --hlink: crimson;
+    --alink: #e60000;
+    --flink: #e60000;
+    --hlink: #e60000;
     --vlink: #d3d3d3;
-    --dlink_bg: crimson;
-    --dlink_abg: #fd1340;
-    --dlink_fbg: #fd1340;
-    --dlink_hbg: #fd1340;
-    --dlink_vbg: crimson;
+    --dlink_bg: #e60000;
+    --dlink_abg: #e60202;
+    --dlink_fbg: #e60202;
+    --dlink_hbg: #e60202;
+    --dlink_vbg: #e60000;
     --dlink: #d3d3d3;
     --dlink_a: #d3d3d3;
     --dlink_f: #d3d3d3;
@@ -22,7 +22,7 @@
     --dlink_v: #d3d3d3;
     --bgcolor1: #f1f1f1;
     --bgcolor2: #ddd;
-    --contentcolor: crimson;
+    --contentcolor: #e60000;
     --footer_bgcolor: #181818;
     --footer_textcolor: #b7b7b7;
     --bgfiltercolor: rgba(126, 126, 126, 0);
