@@ -38,7 +38,7 @@ ul {
 }
 
 ul li:before {
-    content: "►";
+    content: "✏";
     position: absolute;
     left: 0;
     font: bold;
@@ -337,7 +337,7 @@ footer {
     -webkit-transition: background-color ease 0.5s;
     margin: 0 auto;
 }
-
+/*
 .dropbtn .headeritem {
     transition: transform ease 1s;
 }
@@ -357,7 +357,7 @@ footer {
 .dropdown {
     position: relative;
 }
-
+*/
 .dropdown-content {
     display: block;
     position: absolute;
