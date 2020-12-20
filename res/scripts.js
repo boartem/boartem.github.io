@@ -24,18 +24,18 @@ function setcolor_1() {
 
 function setcolor_2() {
     var bgdiv = document.getElementById('bgimg');
-    root.style.setProperty(' --body_bgcolor', '#3498DB');
+    root.style.setProperty(' --body_bgcolor', '#19a2ff');
     root.style.setProperty('--link', '#d3d3d3');
-    root.style.setProperty('--alink', '#3498DB');
-    root.style.setProperty('--flink', '#3498DB');
-    root.style.setProperty('--hlink', '#3498DB');
+    root.style.setProperty('--alink', '#19a2ff');
+    root.style.setProperty('--flink', '#19a2ff');
+    root.style.setProperty('--hlink', '#19a2ff');
     root.style.setProperty('--vlink', '#d3d3d3');
-    root.style.setProperty('--dlink_bg', '#3498DB');
+    root.style.setProperty('--dlink_bg', '#19a2ff');
     root.style.setProperty('--dlink_abg', '#2980B9');
     root.style.setProperty('--dlink_fbg', '#2980B9');
     root.style.setProperty('--dlink_hbg', '#2980B9');
-    root.style.setProperty('--dlink_vbg', '#3498DB');
-    root.style.setProperty('--contentcolor', '#3498DB');
+    root.style.setProperty('--dlink_vbg', '#19a2ff');
+    root.style.setProperty('--contentcolor', '#19a2ff');
     root.style.setProperty('--bgfiltercolor', 'rgba(126, 126, 126, 0)');
 	root.style.setProperty('--bgcolor1', '#333333');
 	root.style.setProperty('--bgcolor2', '#1c1c1c');
