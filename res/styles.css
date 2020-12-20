@@ -38,7 +38,7 @@ ul {
 }
 
 ul li:before {
-    content: "✏";
+    content: "⇒";
     position: absolute;
     left: 0;
     font: bold;
@@ -70,7 +70,6 @@ h1 {
 
 
 .p h2 {
-    color: black;
     transition: color 0.5s ease;
     -webkit-transition: color 0.5s ease;
 }
@@ -80,8 +79,7 @@ h1 {
 }
 
 .p h2::before,
-.p h2::after {
-    display: inline-block;
+.p h2::after {    
     content: "";
     border-top: .3rem solid black;
     width: 4rem;

@@ -3,19 +3,22 @@ let root = document.documentElement;
 function setcolor_1() {
     var bgdiv = document.getElementById('bgimg');
 	var bgdiv2 = document.getElementById('bgimg2');
-    root.style.setProperty(' --body_bgcolor', 'crimson');
+    root.style.setProperty(' --body_bgcolor', '#2980B9');
     root.style.setProperty('--link', '#d3d3d3');
-    root.style.setProperty('--alink', 'crimson');
-    root.style.setProperty('--flink', 'crimson');
-    root.style.setProperty('--hlink', 'crimson');
+    root.style.setProperty('--alink', '#2980B9');
+    root.style.setProperty('--flink', '#2980B9');
+    root.style.setProperty('--hlink', '#2980B9');
     root.style.setProperty('--vlink', '#d3d3d3');
-    root.style.setProperty('--dlink_bg', 'crimson');
+    root.style.setProperty('--dlink_bg', '#2980B9');
     root.style.setProperty('--dlink_abg', '#fd1340');
     root.style.setProperty('--dlink_fbg', '#fd1340');
     root.style.setProperty('--dlink_hbg', '#fd1340');
-    root.style.setProperty('--dlink_vbg', 'crimson');
-    root.style.setProperty('--contentcolor', 'crimson');
+    root.style.setProperty('--dlink_vbg', '#2980B9');
+    root.style.setProperty('--contentcolor', '#2980B9');
     root.style.setProperty('--bgfiltercolor', 'rgba(126, 126, 126, 0)');
+	root.style.setProperty('--bgcolor1', '#f1f1f1');
+	root.style.setProperty('--bgcolor2', '#dddddd');
+	root.style.setProperty('--body_textcolor', 'black');	
     bgdiv.style.backgroundImage = "url(../graphics/bg.jpg)";
 }
 
@@ -34,6 +37,9 @@ function setcolor_2() {
     root.style.setProperty('--dlink_vbg', '#3498DB');
     root.style.setProperty('--contentcolor', '#3498DB');
     root.style.setProperty('--bgfiltercolor', 'rgba(126, 126, 126, 0)');
+	root.style.setProperty('--bgcolor1', '#333333');
+	root.style.setProperty('--bgcolor2', '#1c1c1c');
+	root.style.setProperty('--body_textcolor', 'white');
     bgdiv.style.backgroundImage = 'url(../graphics/bg2.jpg)';
 }
 

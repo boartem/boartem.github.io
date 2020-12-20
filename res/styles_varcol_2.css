@@ -1,7 +1,7 @@
 :root {
     --body_bgcolor: #0074c2;
     --body_bgimg: url("../graphics/bg2.jpg");
-    --body_textcolor: black;
+    --body_textcolor: white;
     --header_bgcolor: #262626;
     --header_textcolor: #d3d3d3;
     --header_size: 60px;
@@ -20,8 +20,8 @@
     --dlink_f: #d3d3d3;
     --dlink_h: #d3d3d3;
     --dlink_v: #d3d3d3;
-    --bgcolor1: #f1f1f1;
-    --bgcolor2: #ddd;
+    --bgcolor1: #333333;
+    --bgcolor2: #1c1c1c;
     --contentcolor: #0074c2;
     --footer_bgcolor: #181818;
     --footer_textcolor: #b7b7b7;
